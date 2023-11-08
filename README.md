@@ -2,23 +2,23 @@
 
 ## Project Overview
 
-In this project, we've created a dynamic and interactive Jupyter notebook application that tracks the real-time location of the International Space Station (ISS) and displays its path on a world map. The project utilizes live data from NASA's Open Notify API to provide up-to-the-minute coordinates of the ISS.
+In this project, I've created a dynamic and interactive Jupyter notebook application that tracks the real-time location of the International Space Station (ISS) and displays its path on a world map. The project utilizes live data from NASA's Open Notify API to provide up-to-the-minute coordinates of the ISS.
 
 ## Key Features
 
-- **Real-time Tracking**: The project streams live data from NASA's Open Notify API, providing the current coordinates of the ISS. We update the ISS's position at regular intervals, simulating real-time tracking.
+- **Real-time Tracking**: The project streams live data from NASA's Open Notify API, providing the current coordinates of the ISS. I update the ISS's position at regular intervals, simulating real-time tracking.
 
-- **Interactive Mapping**: We've used the Folium library, a Python wrapper for Leaflet.js, to create an interactive and visually appealing world map. The map serves as the canvas for displaying the ISS's location and path.
+- **Interactive Mapping**: I've used the Folium library, a Python wrapper for Leaflet.js, to create an interactive and visually appealing world map. The map serves as the canvas for displaying the ISS's location and path.
 
-- **Displaying the Path**: As the ISS moves, we plot its path by connecting the coordinates of its previous positions using a PolyLine on the map. This provides a visual representation of the ISS's trajectory.
+- **Displaying the Path**: As the ISS moves, I plot its path by connecting the coordinates of its previous positions using a PolyLine on the map. This provides a visual representation of the ISS's trajectory.
 
-- **Time-Limited Tracking**: To keep the demonstration concise and meaningful, we've limited the tracking to a specific time frame, e.g., 30 seconds, while updating the position every 5 seconds. This helps showcase the satellite's high-speed movement effectively.
+- **Time-Limited Tracking**: To keep the demonstration concise and meaningful, I've limited the tracking to a specific time frame, e.g., 30 seconds, while updating the position every 5 seconds. This helps showcase the satellite's high-speed movement effectively.
 
 ## How it Works
 
 1. The project begins by initializing an interactive map centered around coordinates (0, 0) with an initial zoom level of 3.
 
-2. We fetch the initial location of the ISS from the Open Notify API and create a PolyLine with an empty list to represent the satellite's path.
+2. I fetch the initial location of the ISS from the Open Notify API and create a PolyLine with an empty list to represent the satellite's path.
 
 3. The code then enters a loop where it periodically retrieves new ISS coordinates, updates the map's markers, and appends the new coordinates to the path.
 
