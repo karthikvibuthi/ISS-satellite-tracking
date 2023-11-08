@@ -1,4 +1,3 @@
-# ISS-satellite-tracking
 # ISS Satellite Tracking and Mapping with Folium
 
 ## Project Overview
